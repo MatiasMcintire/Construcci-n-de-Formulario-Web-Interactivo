@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Summit 2025 — Inscripción</title>
+
+  <!-- Google Fonts: Playfair Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== ENCABEZADO CON IMAGEN ===== -->
+  <header class="site-header">
+    <img
+      src="assets/img/imagen.jpg"
+      alt="Banner Tech Summit 2025"
+      class="header-banner"
+    />
+  </header>
+
+  <!-- ===== CONTENEDOR PRINCIPAL ===== -->
+  <main class="page-wrapper">
+
+    <div class="form-card">
+
+      <!-- Título del formulario -->
+      <div class="form-header">
+        <span class="eyebrow">Formulario de inscripción</span>
+        <h1 class="form-title">Reserva tu lugar</h1>
+        <p class="form-subtitle">Completa los datos para asegurar tu participación en el evento.</p>
+      </div>
+
+      <!-- ===== FORMULARIO ===== -->
+      <form id="registrationForm" novalidate>
+
+        <!-- Fila: Nombre + Apellido -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ej: Ana"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input
+              type="text"
+              id="apellido"
+              name="apellido"
+              placeholder="Ej: González"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Correo electrónico -->
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="tucorreo@ejemplo.com"
+            required
+          />
+        </div>
+
+        <!-- Fecha de nacimiento -->
+        <div class="form-group">
+          <label for="fechaNacimiento">Fecha de nacimiento</label>
+          <input
+            type="date"
+            id="fechaNacimiento"
+            name="fechaNacimiento"
+            required
+          />
+        </div>
+
+        <!-- País de origen (select) -->
+        <div class="form-group">
+          <label for="pais">País de origen</label>
+          <select id="pais" name="pais" required>
+            <option value="" disabled selected>— Selecciona tu país —</option>
+            <option value="CL">Chile</option>
+            <option value="AR">Argentina</option>
+            <option value="PE">Perú</option>
+            <option value="CO">Colombia</option>
+            <option value="MX">México</option>
+            <option value="ES">España</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <!-- Tipo de entrada (radio) -->
+        <div class="form-group">
+          <label class="group-label">Tipo de entrada</label>
+          <div class="radio-group">
+            <label class="radio-option">
+              <input type="radio" name="tipoEntrada" value="general" checked />
+              <span class="radio-box">
+                <span class="radio-title">General</span>
+                <span class="radio-price">$0 — Acceso libre</span>
+              </span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="tipoEntrada" value="vip" />
+              <span class="radio-box">
+                <span class="radio-title">VIP</span>
+                <span class="radio-price">$49.990 — Zona preferencial</span>
+              </span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="tipoEntrada" value="estudiante" />
+              <span class="radio-box">
+                <span class="radio-title">Estudiante</span>
+                <span class="radio-price">$9.990 — Con credencial</span>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Checkbox: Acepto términos -->
+        <div class="form-group checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="terminos" name="terminos" required />
+            <span class="checkbox-custom"></span>
+            Acepto los <a href="#" class="link">términos y condiciones</a> del evento
+          </label>
+        </div>
+
+        <!-- Botón de envío -->
+        <button type="submit" id="btnEnviar" class="btn-submit">
+          Inscribirme al evento
+          <span class="btn-arrow">→</span>
+        </button>
+
+      </form>
+      <!-- Fin del formulario -->
+
+    </div>
+    <!-- Fin form-card -->
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <p>© 2025 Tech Summit — Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Script externo -->
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>
